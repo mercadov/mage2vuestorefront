@@ -21,15 +21,20 @@ module.exports = {
   db: {
 /*    driver: 'mongo',
     url: process.env.DATABASE_URL || 'mongodb://localhost:27017/rcom' */
-  
+
     driver: 'elasticsearch',
     url: process.env.DATABASE_URL || 'http://localhost:9200',
     indexName:  process.env.INDEX_NAME|| 'vue_storefront_catalog'
   },
 
   redis: {
-    host: '127.0.0.1',
-    port: 6379
+    host: process.env.MAGE2VS_REDIS_HOST || '127.0.0.1',
+    port: 6379,
+    no_ready_check: true,
+    auth: "PaHYiMzaS5dC",
+    auth_pass: "PaHYiMzaS5dC",
+    pass: "PaHYiMzaS5dC",
+    password: "PaHYiMzaS5dC"
   },
 
   passport: {
