@@ -18,7 +18,7 @@ const execPromise = function(cmd) {
 
 var commands = [
 	"node --harmony cli.js categories --partitions=1 --removeNonExistient=true",
-	"node --harmony cli.js productcategories --partitions=1",
+	"node --harmony cli.js productcategories --partitions=1 --removeNonExistient=true",
 	"node --harmony cli.js attributes --partitions=1 --removeNonExistient=true",
 	"node --harmony cli.js taxrule --partitions=1 --removeNonExistient=true",
 	"node --harmony cli.js products --partitions=1 --removeNonExistient=true"
