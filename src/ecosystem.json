@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "mage2vs-cron",
+      "script": "cron.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "env": {
+        "TIME_TO_EXIT": 0
+      }
+    }
+  ]
+}
